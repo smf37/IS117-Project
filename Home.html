@@ -1,37 +1,93 @@
 <html lang="en">
-<!-- DEVELOPER: Stephen Fusco, IS117-xxx, Spring 2019 -->
+<!-- DEVELOPER: Stephen Fusco, IS117-004, Spring 2019 -->
 
 <head>
-	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Stephen's Auto Sales</title>
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="Home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  
 </head>
-
     <body>
-	<header>
-    <a><img src="images/Stephens%20auto%20sales.jpg" alt="logo" height="80"></a>
-          <h2>Stephen's Auto Sales</h2>
-          <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
-	</header>
-    <nav id="nav_menu">
-    <ul>
-        <li><a href="Home.html" class="current">Home</a></li>
-        <li><a href="Contact.html">Contact Us</a></li>
-        <li><a href="Camaro.html">Camaro Parts</a></li>
-        <li><a href="Mustang.html">Mustang Parts</a></li>
-        <li><a href="Challenger.html">Challenger Parts</a></li>
-            <ul>
-                <li><a href="#">Our History</a></li>
-                <li><a href="#">Board of Directors</a></li>
-                <li><a href="#">Past Speakers</a></li>
-                <li><a href="#">Contact Information</a></li>
-            </ul>
-        
-        </ul>
-    </nav>
+	   <header class="header">
+        <nav class="navbar nav-style">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                <a href="Home.html"><img class="logo" src="images/Stephens%20auto%20sales.jpg"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="micon">
+                <ul class="nav navbar-nav navbar-right">
+                <li><a href="Home.html" class="current">Home</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="Camaro.html">Performance Upgrades</a></li>
+                    <div class="topnav" id="myTopnav">
 
-    <footer>
-		<p>&copy; 2019, Stephen's Auto Parts, Los Angeles, CA 93755</p>
-	</footer>
+  <div class="dropdown">
+    <button class="dropbtn">Camaro Parts 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Camaro.html">Performance Upgrades</a>
+      <a href="Camaro.html">Link 2</a>
+      <a href="Camaro.html">Link 3</a>
+    </div>
+  </div> 
+</div>
+                <li><a href="Mustang.html">Mustang Parts</a></li>
+                <li><a href="Challenger.html">Challenger Parts</a></li>
+                <li><a href="Cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+
+        </nav>
+        <h1>Special Offers!!!</h1>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="Images/Camaro%20Exhaust.png" alt="Camaro" class="responsive">
+                <img src="Images/Camaro%20Spliter.png" alt="Camaro" class="responsive">
+                <img src="Images/Mustang%20Grill.png" alt="Mustang" class="responsive">
+                <img src="Images/Mustang%20Spoiler.png" alt="Mustang" class="responsive">
+                <img src="Images/Challenger%20Grill.png" alt="Challenger" class="responsive">
+                <img src="Images/Challenger%20Hood.png" alt="Challenger" class="responsive">
+            </div>
+            
+            
+           </div>   
+           </div>
+           
+                <h2>Card</h2>
+                <div class="card">
+                <img src="images/Stephen%20Fusco.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4><b>Stephen Fusco</b></h4>
+                    <p>Owner of Website</p>
+            </div>
+           </div>
+        </header>
+        <main>
+        <section>
+            <h2>About Us</h2>
+                <p>Here at Stephen's Auto Sales we provide our customers with the highest quality parts for the right amount of money. We sale any american muscle part ranging from Camaro's to Mustangs, and even Challengers.</p>
+                <p>Lorem Ipsum</p>
+        
+        </section>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text">&copy; 2019, Stephen's Auto Parts, Los Angeles, CA 93755</p>
+        </div>
+    </div>
